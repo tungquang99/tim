@@ -12,6 +12,7 @@
   padding: 0;
   margin: 0;
   background: #000;
+  overflow: hidden;
 }
 canvas {
   position: absolute;
@@ -79,6 +80,25 @@ span::after {
   100% {
     left: 0;
   }
+}
+
+#pinkboard {
+  animation: animate 1.2s infinite;
+}
+
+@keyframes animate {
+	0% {
+		transform: scale(1);
+	}
+	30% {
+		transform: scale(.8);
+	}
+	60% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	}
 }
 
   </style>
